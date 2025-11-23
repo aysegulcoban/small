@@ -25,6 +25,7 @@ function App() {
       console.log('Backend\'e istek atılıyor.....')
       const response = await axios.get("http://localhost:5210/api/SmallPost")
       setWeatherData(response.data)
+      console.log("Yenile butonuna tiklandi")
       setError(null)
     } catch(err) {
       console.log('Hata: ', err)
